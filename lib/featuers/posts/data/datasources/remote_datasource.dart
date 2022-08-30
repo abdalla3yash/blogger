@@ -45,7 +45,7 @@ class RemoteDataSourceImplement implements RemoteDataSource {
     };
 
     final response =
-        await client.post(Uri.parse(BASE_URL + "/posts/"), body: body);
+        await client.post(Uri.parse("$BASE_URL/posts/"), body: body);
 
     if (response.statusCode == 201) {
       return Future.value(unit);
@@ -57,7 +57,7 @@ class RemoteDataSourceImplement implements RemoteDataSource {
   @override
   Future<Unit> deletePost(int postId) async {
     final response = await client.delete(
-      Uri.parse(BASE_URL + "/posts/${postId.toString()}"),
+      Uri.parse("$BASE_URL/posts/${postId.toString()}"),
       headers: {"Content-Type": "application/json"},
     );
 
@@ -77,7 +77,7 @@ class RemoteDataSourceImplement implements RemoteDataSource {
     };
 
     final response = await client.patch(
-      Uri.parse(BASE_URL + "/posts/$postId"),
+      Uri.parse("$BASE_URL/posts/$postId"),
       body: body,
     );
 

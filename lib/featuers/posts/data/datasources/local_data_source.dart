@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:blogger/core/error/exception.dart';
-import 'package:blogger/core/error/failure.dart';
 import 'package:blogger/featuers/posts/data/models/post_model.dart';
 import 'package:dartz/dartz.dart';
 import 'package:shared_preferences/shared_preferences.dart';
