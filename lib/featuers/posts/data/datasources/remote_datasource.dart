@@ -4,7 +4,7 @@ import 'package:dartz/dartz.dart';
 abstract class RemoteDataSource {
   Future<List<PostModel>> getAllPosts();
   Future<Unit> deletePost(int postId);
-  Future<Unit> update0Post(PostModel postmodel);
+  Future<Unit> updatePost(PostModel postmodel);
   Future<Unit> addPost(PostModel postmodel);
 }
 
@@ -30,7 +30,7 @@ class RemoteDataSourceImplement implements RemoteDataSource {
   }
 
   @override
-  Future<Unit> update0Post(PostModel postmodel) {
+  Future<Unit> updatePost(PostModel postmodel) {
     // TODO: implement update0Post
     throw UnimplementedError();
   }
