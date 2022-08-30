@@ -1,10 +1,10 @@
-import 'package:bloc/bloc.dart';
 import 'package:blogger/core/error/failure.dart';
 import 'package:blogger/core/strings/failures.dart';
 import 'package:blogger/featuers/posts/domain/entities/post.dart';
 import 'package:blogger/featuers/posts/domain/usecases/get_all_posts.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'posts_event.dart';
 part 'posts_state.dart';

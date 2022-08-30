@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:blogger/core/error/failure.dart';
 import 'package:blogger/core/strings/failures.dart';
 import 'package:blogger/core/strings/messages.dart';
@@ -8,6 +7,7 @@ import 'package:blogger/featuers/posts/domain/usecases/delete_post.dart';
 import 'package:blogger/featuers/posts/domain/usecases/update_post.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'crud_post_event.dart';
 part 'crud_post_state.dart';
