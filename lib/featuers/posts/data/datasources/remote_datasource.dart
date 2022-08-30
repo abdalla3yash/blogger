@@ -2,11 +2,13 @@ import 'package:blogger/featuers/posts/data/models/post_model.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class RemoteDataSource {
-  Future<PostModel> getAllPosts();
+  Future<List<PostModel>> getAllPosts();
   Future<Unit> deletePost(int postId);
   Future<Unit> update0Post(PostModel postmodel);
   Future<Unit> addPost(PostModel postmodel);
 }
+
+const BASE_URL = "https://jsonplaceholder.typicode.com";
 
 class RemoteDataSourceImplement implements RemoteDataSource {
   @override
@@ -22,7 +24,7 @@ class RemoteDataSourceImplement implements RemoteDataSource {
   }
 
   @override
-  Future<PostModel> getAllPosts() {
+  Future<List<PostModel>> getAllPosts() {
     // TODO: implement getAllPosts
     throw UnimplementedError();
   }
